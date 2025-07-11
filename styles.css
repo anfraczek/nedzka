@@ -457,15 +457,15 @@ ul {
 }
 
 .skoda-logo {
-    width: 250px;
+    max-width: 250px;
 }
 
 .audi-logo {
-    width: 200px;
+    max-width: 200px;
 }
 
 .vw-logo, .seat-logo {
-    width: 100px;
+    max-width: 100px;
 }
 
 .gallery {
