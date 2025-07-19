@@ -303,19 +303,22 @@ section {
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-size: 4rem;
     margin-bottom: 20px;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 1.2;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 span {
+    font-weight: 900;
     color: var(--primary-red);
 }
 
 .hero p {
-    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
     margin-bottom: 30px;
     line-height: 1.6;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -741,6 +744,10 @@ section {
     margin-top: 50px;
 }
 
+.cta-container i {
+    margin-right: 10px;
+}
+
 /* Footer */
 .footer {
     background-color: #1a1a1a;
@@ -851,7 +858,6 @@ section {
     font-size: 1.2rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: var(--transition);
-
 }
 
 .floating-cta a:first-child:hover {
@@ -881,15 +887,11 @@ section {
     }
     
     .hero h1 {
-        font-size: 2.8rem;
+        font-size: 4rem;
     }
-    
-    .hero h2 {
-        font-size: 2.5rem;
-    }
-    
+
     .hero p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     
     .benefit-text {
@@ -898,6 +900,12 @@ section {
     
     .benefit-icon {
         font-size: 1.3rem;
+    }
+
+    .guarantee-banner .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
     }
 }
 
@@ -936,7 +944,11 @@ section {
     }
     
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
     }
 
     .guarantee-banner h3 {
@@ -949,11 +961,6 @@ section {
 
     .guarantee-banner strong {
         font-size: 1.5rem;
-    }
-    
-    .guarantee-banner .container {
-        flex-direction: column;
-        text-align: center;
     }
     
     .benefits-grid {
@@ -969,6 +976,14 @@ section {
     .services-grid,
     .features-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
     }
     
     .floating-cta {
@@ -1035,6 +1050,18 @@ section {
     
     .benefit-text {
         font-size: 0.95rem;
+    }
+
+    .floating-cta a:first-child {
+        width: 60px;
+        height: 60px;
+        font-size: 1.7rem;
+    }
+
+    .floating-cta a:last-child {
+        height: 60px;
+        width: auto;
+        font-size: 1.4rem;
     }
 }
 
