@@ -595,6 +595,12 @@ section {
     position: relative;
     background-size: cover;
     background-position: center;
+    transition: var(--transition);
+}
+
+.gallery-item:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
 }
 
 .gallery-overlay {
