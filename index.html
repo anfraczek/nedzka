@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoserwis Włodzimierz Nędzka Kraków</title>
+    <meta name="description" content="Profesjonalny serwis samochodów Volkswagen Group w Krakowie z ponad 20-letnim doświadczeniem">
+    
+    <!-- Preload najważniejsze zasoby -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="img/logo-proste.svg" as="image">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/logo-proste.svg">
+</head>
+<body>
+    <div class="phone-bar">
+        <a href="tel:+48602318681" class="phone-nb"><i class="fas fa-phone" aria-hidden="true"></i> +48 602 318 681</a>
+        <a href="tel:+48126369691" class="phone-nb"><i class="fas fa-phone" aria-hidden="true"></i> (12) 636 96 91</a>
+        <a href="mailto:w@nedzka.pl" class="hide"><i class="fas fa-envelope" aria-hidden="true"></i> w@nedzka.pl</a>
+        <a href="https://www.google.com/maps?ll=50.066662,19.843554&z=14&t=m&hl=pl&gl=PL&mapclient=embed&cid=3977858241187841381" class="hide"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> ul. Przyszłości <span class="phone-nb">10</span>, Kraków</a>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="#home"><img src="img/logo-proste.svg" alt="Autoserwis Włodzimierz Nędzka - logo" width="150" height="50" class="logo"></a>
+            </div>
+            <nav class="nav">
+                <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                    <div class="hamburger-inner"></div>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#home" class="link">Strona główna</a></li>
+                    <li><a href="#services" class="link">Usługi</a></li>
+                    <li><a href="#gallery" class="link">Galeria</a></li>
+                    <li><a href="#appointment" class="link">Kontakt</a></li>
+                    <li><a href="#appointment" class="cta-button">Umów wizytę</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Zadbamy o <span>Twój samochód</span> jak o własny</h1>
+            <p>Profesjonalny serwis samochodów Volkswagen Group w Krakowie z ponad 20-letnim doświadczeniem</p>
+            <div class="hero-cta">
+                <a href="#appointment" class="cta-button">Umów wizytę</a>
+                <a href="tel:+48602318681" class="cta-button-second">Zadzwoń teraz</a>
+            </div>
+        </div>
+        <div class="racing-stripes"></div>
+    </section>
+
+    <div class="guarantee-banner">
+        <div class="container">
+            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+            <div>
+                <h3>Zachowujemy gwarancję producenta!</h3>
+                <p>Osoby posiadające nowy samochód na gwarancji mogą skorzystać na naszego kompleksowego serwisu <strong>BEZ UTRATY GWARANCJI!</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="racing-stripes2"></div>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Nasze Usługi</h2>
+            <div class="services-grid">
+                <a href="#services" class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i></div>
+                    <h3>Całodobowa Pomoc Drogowa</h3>
+                </a>
+                <a href="#services" class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+                    <h3>Przeglądy</h3>
+                </a>
+                <a href="#services" class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-laptop" aria-hidden="true"></i></div>
+                    <h3>Diagnostyka komputerowa</h3>
+                </a>
+                <a href="#services" class="service-card">
+                    <div class="service-icon"><i class="fas fa-oil-can" aria-hidden="true"></i></div>
+                    <h3>Wymiana oleju</h3>
+                </a>
+                <a href="#services" class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-snowflake" aria-hidden="true"></i></div>
+                    <h3>Klimatyzacja</h3>
+                </a>
+                <a href="#services" class="service-card">
+                    <div class="service-icon"><i class="fas fa-car-crash" aria-hidden="true"></i></div>
+                    <h3>Kompleksowa obsługa powypadkowa</h3>
+                </a>
+            </div>
+            <div class="chevron-section">
+                <a href="#services" class="animated-chevron" aria-label="Zobacz więcej usług">
+                    <i class="fas fa-chevron-down chevron-see-more" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Jak działamy?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                    <h3>Zgłoś się do nas lub zadzwoń</h3>
+                    <p>Dziękujemy za telefon i od razu przechodzimy do działania.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-medal" aria-hidden="true"></i>
+                    <h3>Zachowujesz gwarancję jak w autoryzowanym serwisie</h3>
+                    <p>Stosujemy wyłącznie sprawdzone rozwiązania i części.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-cogs" aria-hidden="true"></i>
+                    <h3>Szeroki wybór części zamiennych</h3>
+                    <p>Oferujemy części od najlepszych producentów.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <h3>Profesjonalny serwis pogwarancyjny</h3>
+                    <p>Kompleksowa obsługa również po wygaśnięciu gwarancji.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Galeria</h2>
+            <div class="gallery-grid">
+                <a href="#gallery" class="gallery-item" style="background-image: url('img/mechanicy.png');">
+                    <div class="gallery-overlay">
+                        <h3>Nasz zespół</h3>
+                    </div>
+                </a>
+                <a href="#gallery" class="gallery-item" style="background-image: url('img/warsztat.png');">
+                    <div class="gallery-overlay">
+                        <h3>Warsztat</h3>
+                    </div>
+                </a>
+                <a href="#gallery" class="gallery-item" style="background-image: url('img/rajdy.png');">
+                    <div class="gallery-overlay">
+                        <h3>Rajdy</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="appointment" id="appointment">
+        <div class="container">
+            <div class="appointment-form">
+                <h2 class="section-title">Dlaczego warto nas wybrać?</h2>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle benefit-icon" aria-hidden="true"></i>
+                        <span class="benefit-text">Prawie 35 lat doświadczenia w serwisach markowych</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle benefit-icon" aria-hidden="true"></i>
+                        <span class="benefit-text">Gwarancja na wszystkie wykonane usługi</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle benefit-icon" aria-hidden="true"></i>
+                        <span class="benefit-text">Transparentne ceny bez ukrytych kosztów</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle benefit-icon" aria-hidden="true"></i>
+                        <span class="benefit-text">Specjalizacja w markach VW, Audi, Skoda i Seat</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle benefit-icon" aria-hidden="true"></i>
+                        <span class="benefit-text">Szeroki wybór części zamiennych</span>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <a href="tel:+48602318681" class="cta-button">
+                        <i class="fas fa-phone" aria-hidden="true"></i> Zadzwoń teraz
+                    </a>
+                </div>
+            </div>
+            
+            <div class="appointment-info">
+                <h3>Godziny otwarcia</h3>
+                <ul class="hours-list">
+                    <li class="phone-nb"><span>Poniedziałek - Piątek:</span> 8:00 - 16:00</li>
+                    <li class="phone-nb"><span>Sobota:</span> 9:00 - 13:00</li>
+                    <li><span>Niedziela:</span> Zamknięte</li>
+                </ul>
+                
+                <div class="contact-info">
+                    <h3>Kontakt</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> ul. Przyszłości&nbsp;<span class="phone-nb">10, 30-298</span>&nbsp;Kraków</li>
+                        <li class="phone-nb"><i class="fas fa-phone" aria-hidden="true"></i> +48 602 318 681</li>
+                        <li class="phone-nb"><i class="fas fa-phone" aria-hidden="true"></i> (12) 636 96 91</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> w@nedzka.pl</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo-proste.svg" alt="Autoserwis Włodzimierz Nędzka - logo" width="150" height="50" class="logo">
+                    <p>ABC Nędzka jest niezależnym serwisem samochodowym, oferującym kompleksową obsługę powypadkową pojazdów wielu typów, głównie marek Audi, WV, Seat i Skoda. Oferujemy serwis samochodów osobowych i dostawczych, serwis kamperów oraz serwis motocykli, skuterów i quadów.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Na skróty</h4>
+                    <ul>
+                        <li><a href="#home">Strona główna</a></li>
+                        <li><a href="#services">Usługi</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#appointment">Kontakt</a></li>
+                    </ul>
+                </div>
+                 <!-- <div class="footer-social">
+                    <h4>Śledź nas</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div> -->
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li class="phone-nb"><i class="fas fa-phone" aria-hidden="true"></i> +48 602 318 681</li>
+                        <li class="phone-nb"><i class="fas fa-phone" aria-hidden="true"></i> (12) 636 96 91</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> w@nedzka.pl</li>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> ul. Przyszłości <span class="phone-nb">10</span>, Kraków</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <!-- <p>&copy; 2025 ABC Nędzka Autoserwis. Wszelkie prawa zastrzeżone.</p> -->
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-cta">
+        <a href="tel:+48602318681" aria-label="Zadzwoń"><i class="fas fa-phone" aria-hidden="true"></i></a>
+        <a href="#appointment" class="cta-button">Umów wizytę</a>
+    </div>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
