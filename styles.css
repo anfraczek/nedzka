@@ -930,7 +930,19 @@ section {
     }
     
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
+    }
+
+    .guarantee-banner h3 {
+        font-size: 2.5rem;
+    }
+
+    .guarantee-banner p {
+        font-size: 1.3rem;
+    }
+
+    .guarantee-banner strong {
+        font-size: 1.5rem;
     }
     
     .guarantee-banner .container {
@@ -958,6 +970,18 @@ section {
         right: 10px;
     }
     
+    .guarantee-banner h3 {
+        font-size: 2rem;
+    }
+
+    .guarantee-banner p {
+        font-size: 1.2rem;
+    }
+
+    .guarantee-banner strong {
+        font-size: 1.3rem;
+    }
+
     .floating-cta a:last-child {
         padding: 10px 15px;
         font-size: 14px;
@@ -1010,7 +1034,7 @@ section {
 
 @media (max-width: 400px) {
     .hero h1 {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
     }
     
     .hero p {
