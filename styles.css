@@ -510,72 +510,76 @@ section {
     }
 }
 
-/* Brands Section */
-.brands {
-    padding: 80px 0;
+/* Sekcja marek */
+.brands-section {
+    padding: 60px 0;
     background-color: var(--light-bg);
-    position: relative;
-    overflow: hidden;
-    margin-bottom: -1rem;
-}
-
-.brands-title {
-    font-size: 2.8rem;
-    margin-bottom: 3rem;
-    position: relative;
-    display: block;
     text-align: center;
-    color: var(--primary-blue);
-    width: 100%;
-}
-
-.brands-title::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background-color: var(--primary-red);
 }
 
 .brands-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.brand-card {
     position: relative;
-    z-index: 1;
-}
-
-.brands-grid img {
-    filter: grayscale(100%);
-    opacity: 0.7;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     transition: var(--transition);
-    transform: scale(0.9);
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid var(--primary-blue);
 }
 
-.brands-grid img:hover {
+.brand-card img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+.brand-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.brand-card:hover img {
     filter: grayscale(0%);
     opacity: 1;
     transform: scale(1.1);
 }
 
-.skoda-logo {
-    max-width: 180px;
-    width: 100%;
+.brand-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--primary-blue);
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transition: var(--transition);
 }
 
-.audi-logo {
-    max-width: 150px;
-    width: 100%;
+.brand-card:hover .brand-overlay {
+    opacity: 1;
 }
 
-.vw-logo, .seat-logo {
-    max-width: 80px;
-    width: 100%;
+.brands-note {
+    color: var(--gray-text);
+    font-style: italic;
+    margin-top: 20px;
 }
 
 /* Gallery */
@@ -907,6 +911,10 @@ section {
         text-align: center;
         gap: 20px;
     }
+
+    .guarantee-banner i {
+        font-size: 5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -966,6 +974,15 @@ section {
     .benefits-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .brand-card {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1001,6 +1018,10 @@ section {
 
     .guarantee-banner strong {
         font-size: 1.3rem;
+    }
+
+    .guarantee-banner i {
+        font-size: 4rem;
     }
 
     .floating-cta a:last-child {
@@ -1067,10 +1088,21 @@ section {
 
 @media (max-width: 400px) {
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: 3rem;
     }
     
     .hero p {
         font-size: 1rem;
     }
+
+    .hero-cta .cta-button, 
+    .hero-cta .cta-button-second {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .guarantee-banner i {
+        font-size: 3rem;
+    }
+    
 }
