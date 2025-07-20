@@ -7,15 +7,15 @@
     <meta name="description" content="Profesjonalny serwis samochodów Volkswagen Group w Krakowie z ponad 20-letnim doświadczeniem">
     
     <!-- Preload najważniejsze zasoby -->
-    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="css/styles.css" as="style">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" as="style">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
-    <link rel="preload" href="logo-proste.svg" as="image">
+    <link rel="preload" href="img/logo-proste.svg" as="image">
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="logo-proste.svg">
+    <link rel="icon" href="img/logo-proste.svg">
 </head>
 <body>
     <div class="phone-bar">
@@ -28,7 +28,7 @@
     <header class="header">
         <div class="container">
             <div class="logo-container">
-                <a href="#home"><img src="logo-proste.svg" alt="Autoserwis Włodzimierz Nędzka - logo" width="150" height="50" class="logo"></a>
+                <a href="#home"><img src="img/logo-proste.svg" alt="Autoserwis Włodzimierz Nędzka - logo" width="150" height="50" class="logo"></a>
             </div>
             <nav class="nav">
                 <button class="hamburger" aria-label="Menu" aria-expanded="false">
@@ -134,21 +134,60 @@
         </div>
     </section>
 
+    <section class="brands-section">
+        <div class="container">
+            <h2 class="section-title">Specjalizujemy się w markach</h2>
+            
+            <div class="brands-grid">
+                <!-- Każde logo w osobnej karcie z efektem hover -->
+                <div class="brand-card">
+                    <img src="img/vw.svg" alt="Volkswagen" loading="lazy">
+                    <div class="brand-overlay">
+                        <p>Volkswagen</p>
+                    </div>
+                </div>
+                
+                <div class="brand-card">
+                    <img src="img/audi.svg" alt="Audi" loading="lazy">
+                    <div class="brand-overlay">
+                        <p>Audi</p>
+                    </div>
+                </div>
+                
+                <div class="brand-card">
+                    <img src="img/skoda.svg" alt="Skoda" loading="lazy">
+                    <div class="brand-overlay">
+                        <p>Skoda</p>
+                    </div>
+                </div>
+                
+                <div class="brand-card">
+                    <img src="img/seat.svg" alt="Seat" loading="lazy">
+                    <div class="brand-overlay">
+                        <p>Seat</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="brands-note">Pracujemy na oryginalnych częściach zamiennych i diagnostyce markowej</p>
+        </div>
+    </section>
+
     <section class="gallery" id="gallery">
         <div class="container">
             <h2 class="section-title">Galeria</h2>
             <div class="gallery-grid">
-                <a href="#gallery" class="gallery-item" style="background-image: url('mechanicy.png');">
+                <a href="#gallery" class="gallery-item" style="background-image: url('img/mechanicy.png');">
                     <div class="gallery-overlay">
                         <h3>Nasz zespół</h3>
                     </div>
                 </a>
-                <a href="#gallery" class="gallery-item" style="background-image: url('warsztat.png');">
+                <a href="#gallery" class="gallery-item" style="background-image: url('img/warsztat.png');">
                     <div class="gallery-overlay">
                         <h3>Warsztat</h3>
                     </div>
                 </a>
-                <a href="#gallery" class="gallery-item" style="background-image: url('rajdy.png');">
+                <a href="#gallery" class="gallery-item" style="background-image: url('img/rajdy.png');">
                     <div class="gallery-overlay">
                         <h3>Rajdy</h3>
                     </div>
@@ -213,7 +252,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="logo-proste.svg" alt="Autoserwis Włodzimierz Nędzka - logo" width="150" height="50" class="logo">
+                    <img src="img/logo-proste.svg" alt="Autoserwis Włodzimierz Nędzka - logo" width="150" height="50" class="logo">
                     <p>ABC Nędzka jest niezależnym serwisem samochodowym, oferującym kompleksową obsługę powypadkową pojazdów wielu typów, głównie marek Audi, WV, Seat i Skoda. Oferujemy serwis samochodów osobowych i dostawczych, serwis kamperów oraz serwis motocykli, skuterów i quadów.</p>
                 </div>
                 <div class="footer-links">
@@ -254,6 +293,6 @@
         <a href="#appointment" class="cta-button">Umów wizytę</a>
     </div>
 
-    <script src="script.js" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
